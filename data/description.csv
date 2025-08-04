@@ -1,6 +1,7 @@
 label,sublabel,description,styles,bgcolor
-可燃ごみ,,,img/moyasu02.svg,#ea3b13
-不燃ごみ,,,img/moyasanai02.svg,#733b96
-資源１,,,img/shigen02.svg,#77ae1f
+可燃ごみ,,,,#ea3b13
+不燃ごみ,,,,#733b96
+資源１,,,,#77ae1f
 資源２,,,,#2dc7aa
 資源３・有害,,,,#27907A
+
