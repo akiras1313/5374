@@ -10,6 +10,9 @@ h2 {
   background: #f4f4f4;/*背景色*/
   border-left: solid 5px #7db4e6;/*左線*/
 }
+h3 {
+  background: linear-gradient(transparent 70%, #a7d6ff 70%);
+}
 a,
 a:hover {
 	color: white;
