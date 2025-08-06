@@ -1,6 +1,7 @@
 label,sublabel,description,styles,bgcolor
 可燃ごみ,,,,#ff6e59
-不燃ごみ,,,,#685ecf
+不燃ごみ,,,,#ba5ed5
 カン・ビン,,,,#2dc7aa
 ペットボトル,,,,#13c4e1
 資源・有害,,,,#77ae1f
+粗大ごみ,,,,#685ecf
