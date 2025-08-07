@@ -370,8 +370,9 @@ $(function() {
 /*   var descriptions = new Array(); */
 	const hash=location.hash.replace('#','');
 	if(hash){
-		$("#select_area").val(hash);
+		//$("#select_area").val(hash);
 		alert(hash);
+		$('#select_area').val(1);
 		//onChangeSelect(hash);
 	}
 
