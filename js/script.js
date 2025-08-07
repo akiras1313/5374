@@ -373,7 +373,7 @@ $(function() {
     	const hash=location.hash.replace('#','');
 	if(hash){
 	}else{
-		hash=localStorage.getItem("selected_area_name")
+		hash=localStorage.getItem("selected_area_name");
 	}
     return hash;
   }
