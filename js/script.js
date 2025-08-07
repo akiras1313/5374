@@ -368,7 +368,12 @@ $(function() {
   var areaModels = new Array();
   var remarks = new Array();
 /*   var descriptions = new Array(); */
-
+	const hash=location.hash.replace('#','');
+	if(hash){
+		$("#select_area").val(hash);
+		alert(hash);
+		//onChangeSelect(hash);
+	}
 
   function getSelectedAreaName() {
     return localStorage.getItem("selected_area_name");
@@ -652,11 +657,7 @@ $(function() {
 	  location.hash=row_index;
     onChangeSelect(row_index);
   });
-	const hash=location.hash.replace('#','');
-	if(hash){
-		$("#select_area").val(hash);
-		//onChangeSelect(hash);
-	}
+
 
 
   //-----------------------------------
