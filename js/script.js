@@ -368,13 +368,6 @@ $(function() {
   var areaModels = new Array();
   var remarks = new Array();
 /*   var descriptions = new Array(); */
-	const hash=location.hash.replace('#','');
-	if(hash){
-		//$("#select_area").val(hash);
-		alert(hash);
-		$('#select_area').val(1);
-		//onChangeSelect(hash);
-	}
 
   function getSelectedAreaName() {
     return localStorage.getItem("selected_area_name");
@@ -708,4 +701,11 @@ $(function() {
     }
   }
   updateAreaList();
+	const hash=location.hash.replace('#','');
+	if(hash){
+		//$("#select_area").val(hash);
+		alert(hash);
+		$('#select_area').val(1);
+		//onChangeSelect(hash);
+	}
 });
