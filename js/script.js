@@ -652,6 +652,10 @@ $(function() {
 	  location.hash=$(this).val();
     onChangeSelect(row_index);
   });
+	const hash=location.hash.replace('#','');
+	if(hash){
+		$("#select_area").val(hash);
+	}
 
   //-----------------------------------
   //位置情報をもとに地域を自動的に設定する処理です。
