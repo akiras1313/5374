@@ -372,6 +372,7 @@ $(function() {
 	const hash=location.hash.replace('#','');
 	if(hash){
 		$("#select_area").val(hash);
+		onChangeSelect(hash);
 	}
 	
   function getSelectedAreaName() {
