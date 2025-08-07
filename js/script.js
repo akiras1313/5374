@@ -649,7 +649,7 @@ $(function() {
   //リストが選択されたら
   $("#select_area").change(function(data) {
     var row_index = $(data.target).val();
-	  location.hash=$(this).val();
+	  location.hash=row_index;
     onChangeSelect(row_index);
   });
 	const hash=location.hash.replace('#','');
