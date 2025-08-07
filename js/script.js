@@ -626,7 +626,7 @@ $(function() {
   function onChangeSelect(row_index) {
     if (row_index == -1) {
       $("#accordion").html("");
-      row_index("");
+	    row_index="";
       return;
     }
     setSelectedAreaName(areaModels[row_index].label);
