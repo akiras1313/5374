@@ -369,7 +369,11 @@ $(function() {
   var remarks = new Array();
 /*   var descriptions = new Array(); */
 
-
+	const hash=location.hash.replace('#','');
+	if(hash){
+		$("#select_area").val(hash);
+	}
+	
   function getSelectedAreaName() {
     return localStorage.getItem("selected_area_name");
   }
@@ -652,10 +656,7 @@ $(function() {
 	  location.hash=row_index;
     onChangeSelect(row_index);
   });
-	const hash=location.hash.replace('#','');
-	if(hash){
-		$("#select_area").val(hash);
-	}
+
 
   //-----------------------------------
   //位置情報をもとに地域を自動的に設定する処理です。
