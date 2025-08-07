@@ -370,7 +370,7 @@ $(function() {
 /*   var descriptions = new Array(); */
 
   function getSelectedAreaName() {
-    	const hash=location.hash.replace('#','');
+    	let hash=location.hash.replace('#','');
 	if(hash){
 	}else{
 		hash=localStorage.getItem("selected_area_name");
