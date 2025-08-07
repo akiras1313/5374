@@ -370,7 +370,12 @@ $(function() {
 /*   var descriptions = new Array(); */
 
   function getSelectedAreaName() {
-    return localStorage.getItem("selected_area_name");
+    	const hash=location.hash.replace('#','');
+	if(hash){
+	}else{
+		hash=localStorage.getItem("selected_area_name")
+	}
+    return hash;
   }
 
   function setSelectedAreaName(name) {
@@ -620,7 +625,7 @@ $(function() {
   function onChangeSelect(row_index) {
     if (row_index == -1) {
       $("#accordion").html("");
-      setSelectedAreaName("");
+      row_index("");
       return;
     }
     setSelectedAreaName(areaModels[row_index].label);
@@ -648,7 +653,8 @@ $(function() {
   //リストが選択されたら
   $("#select_area").change(function(data) {
     var row_index = $(data.target).val();
-	  location.hash=row_index;
+	  var txt = $("#select_area").children("option:selected").text();
+	  location.hash=txt;
     onChangeSelect(row_index);
   });
 
@@ -701,11 +707,4 @@ $(function() {
     }
   }
   updateAreaList();
-	const hash=location.hash.replace('#','');
-		alert(hash);
-	if(hash){
-		//$("#select_area").val(hash);
-		$('#select_area').val(1);
-		//onChangeSelect(hash);
-	}
 });
