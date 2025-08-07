@@ -702,9 +702,9 @@ $(function() {
   }
   updateAreaList();
 	const hash=location.hash.replace('#','');
+		alert(hash);
 	if(hash){
 		//$("#select_area").val(hash);
-		alert(hash);
 		$('#select_area').val(1);
 		//onChangeSelect(hash);
 	}
