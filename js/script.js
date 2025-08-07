@@ -372,6 +372,7 @@ $(function() {
   function getSelectedAreaName() {
     	let hash=location.hash.replace('#','');
 	if(hash){
+		hash = decodeURIComponent(hash);
 	}else{
 		hash=localStorage.getItem("selected_area_name");
 	}
@@ -654,6 +655,7 @@ $(function() {
   $("#select_area").change(function(data) {
     var row_index = $(data.target).val();
 	  var txt = $("#select_area").children("option:selected").text();
+	  txt = encodeURIComponent(txt);
 	  location.hash=txt;
     onChangeSelect(row_index);
   });
